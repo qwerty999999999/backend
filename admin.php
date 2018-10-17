@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['usernamea'])){
-    header("Refresh:0; url=indexd.php");
+    header("Refresh:0; url=index.php");
 }
 ?>
 
@@ -170,6 +170,14 @@ i {
             <a href="choosea.php">
               <span>
                   <em>Mark Attendance</em>
+                  <i aria-hidden="true" class="fa fa-cloud-download fa-lg"></i>				
+              </span>
+            </a>
+      </div>
+       <div class="Btn Btn-Up red" data-content="Click To Delete">
+            <a href="edit.php">
+              <span>
+                  <em>Delete A Student</em>
                   <i aria-hidden="true" class="fa fa-cloud-download fa-lg"></i>				
               </span>
             </a>
