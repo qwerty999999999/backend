@@ -4,9 +4,9 @@ if(!isset($_SESSION['usernamea'])){
     header("Refresh:0; url=index.php");
 }
 $servername = "localhost";
-$username = "id7316329_qwerty999";
-$password = "pmsndsh7";
-$conn = new mysqli($servername, $username, $password,'id7316329_ncc');
+$username = "";
+$password = "";
+$conn = new mysqli($servername, $username, $password,'');
 if(isset($_POST['submit'])){
 $u=$_POST['username'];
 $s="SELECT * FROM attendance WHERE crn='$u'";
